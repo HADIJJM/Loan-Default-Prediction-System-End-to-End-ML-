@@ -48,8 +48,9 @@ def train_pipeline():
 
     # ————— 5. Train XGBoost Model —————
     model = xgb.XGBClassifier(
-        n_estimators=300,
-        max_depth=5,
+        n_estimators=200,
+        scale_pos_weight=3,
+        max_depth=4,
         learning_rate=0.05,
         subsample=0.8,
         colsample_bytree=0.8,
