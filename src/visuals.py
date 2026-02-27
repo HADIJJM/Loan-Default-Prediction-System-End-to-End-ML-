@@ -9,10 +9,7 @@ FIG_DIR = os.path.join(BASE_DIR, '..', 'reports', 'figures')
 os.makedirs(FIG_DIR, exist_ok=True)
 
 
-# ======================
-# EDA VISUALIZATIONS
-# ======================
-
+# ————— EDA VISUALIZATIONS —————
 def plot_target_distribution(y):
     plt.figure(figsize=(6,4))
     sns.countplot(x=y)
@@ -52,10 +49,7 @@ def plot_correlation_heatmap(df):
 
 
 
-# ======================
-# MODEL EVALUATION
-# ======================
-
+# ————— MODEL EVALUATION —————
 def plot_confusion_matrix(model, X_test, y_test):
     ConfusionMatrixDisplay.from_estimator(model, X_test, y_test)
     plt.title("Confusion Matrix")
