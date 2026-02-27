@@ -66,7 +66,7 @@ def train_pipeline():
 
     print("\n———————————————————————————— ")
     print(" CLASSIFICATION REPORT ")
-    print("n—————————————————————————————\n")
+    print("——————————————————————————————\n")
     print(classification_report(y_test, y_pred))
 
     roc_auc = roc_auc_score(y_test, y_proba)
