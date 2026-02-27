@@ -16,7 +16,7 @@ The system now operates through a **unified entry point** (`main.py`), making it
 ---
 
 ## Project Structure
-
+```text
 Loan-Default-Prediction-System/
 │
 ├── main.py                 # Main Entry Point (Run the system from here)
@@ -42,7 +42,7 @@ Loan-Default-Prediction-System/
 │
 ├── requirements.txt        # Project dependencies
 └── README.md               # Project documentation
-
+```
 ---
 
 ## How to Use
